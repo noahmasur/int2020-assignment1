@@ -13,8 +13,9 @@ int main(int argc, char const *argv[]) {
   cout << "Enter the inflation rate: ";
   cin >> inflation;
 
+  //Update price of inflation for each year
   for (int i = 0; i < years; ++i) {
-    cost *= 1 + (inflation * .01);
+    cost *= 1 + (inflation * .01); //new price with inflation for each year
   }
 
   cout << "The item will cost " << cost << endl;
